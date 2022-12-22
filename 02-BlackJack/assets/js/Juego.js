@@ -19,8 +19,8 @@ const btnPedir = document.querySelector('#btnPedir');
 const btnNuevo = document.querySelector('#btnNuevo');
 const btnDetener = document.querySelector('#btnDetener');
 
-const divCartasJugador     = document.querySelector('#jugador-cartas')
-const divCartasComputadora = document.querySelector('#computadora-cartas')
+const divCartasJugador     = document.querySelector('#jugador-cartas');
+const divCartasComputadora = document.querySelector('#computadora-cartas');
 // const smallJugador = document.querySelector('small'); solo selecione el primer smmall
 const puntosHTML = document.querySelectorAll('small'); //selecciona todos
 
@@ -28,14 +28,14 @@ const crearDeck = () => {
  
    for( let i = 2; i <= 10; i++) {
          for( let tipo of tipos){
-               deck.push( i + tipo)
+               deck.push( i + tipo);
          }
 
       }
 
       for( let esp of especiales) {
          for( let tipo of tipos){
-               deck.push( esp + tipo)
+               deck.push( esp + tipo);
          }
 
       }
@@ -54,7 +54,7 @@ crearDeck();
 const pedirCarta = () => {
 
    if ( deck.length ===0 ){
-      throw 'No hay mas cartas en la baraja'
+      throw 'No hay mas cartas en la baraja';
    }
 
    const carta = deck.shift();// regresa el primer valor del arreglo
@@ -97,7 +97,7 @@ const turnoComputadora = ( puntosMinimos ) => {
          alert('Computadora Gana')
       }
 
-   }, 10);
+   }, 100);
 
 }
 
