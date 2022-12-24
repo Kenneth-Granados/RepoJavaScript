@@ -1,0 +1,25 @@
+npm init => inicia el webpack; npm init -y lo mismopero le indica si a todas las configuraciones
+npm install(o escribir i) webpack webpack-cli --save-dev(o escribir --D) => instala webpack y 
+webpack-cli y los establece como una dependencia de desarrollo
+npm run build => ejecuta el comando webpack por defecto
+npm i --D html-loader html-webpack-plugin => permite mover el archivo index.html a dist y incrustar
+el bondo(main.js) en el index.html
+npm i --D webpack-dev-server
+nmp start
+npm i --D css-loader style-loader  => permite mover el archivo y incrustar el bondo
+para que este un archivo de estilos css global en la carpeta dist
+npm i --D mini-css-extract-plugin
+npm i -D optimize-css-assets-webpack-plugin => para reducir el css a una sola linea
+npm install --save-dev css-minimizer-webpack-plugin Me da erro
+npm i css-minimizer-webpack-plugin -D
+npm i optimize-css-assets-webpack-plugin -D no funcina buscar razon
+npm i file-loader --D (funionan igual con -D o --D)
+npm i copy-webpack-plugin -D 
+npm i babel-preset-minify -D
+npm install babel-plugin-minify-builtins --save-dev
+
+revisar el webpack.config asi se configura todo
+en packege.js escribir en la parte script
+"build": "webpack", 
+"start": "webpack-dev-server --open --port=8081"  el port es por si da error por que esta ocupado el puerto 8080
+En algunos casos el -D o --save-dev va de ultimo
